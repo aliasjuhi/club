@@ -1,0 +1,29 @@
+{
+  "name": "battleclub",
+  "version": "1.0.0",
+  "description": "BattleClub",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "react-google-button": "^0.7.2",
+    "react-spring": "^9.2.3",
+    "unirest": "^0.6.0"
+  }
+}
