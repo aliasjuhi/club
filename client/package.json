@@ -31,6 +31,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
     "react-social-login-buttons": "^3.6.1",
+    "react-spring": "^9.7.3",
     "react-tsparticles": "^2.9.3",
     "reactstrap": "8.9.0",
     "recharts": "^2.4.3",
